@@ -1,2 +1,8 @@
 # API NBA Players
- Creating json file
+ 
+ 
+ Creates json file consists current NBA players, their info and stats.
+ 
+ 
+## v1
+ - NBA player's and their team's info are shown in json file but the are some unwanted results.
