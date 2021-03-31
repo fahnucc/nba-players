@@ -5,4 +5,4 @@
  
  
 ## v1
- - NBA player's and their team's info are shown in json file but the are some unwanted results.
+ - NBA player's and their team's info are shown in json file but there are some unwanted results.
