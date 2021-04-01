@@ -1,8 +1,6 @@
 from bs4 import BeautifulSoup
 import requests
-from urllib import request
 import os
-import time
 import json
 
 dataFileName = "data_file_v2.json"
@@ -43,7 +41,6 @@ try:
                 checkFileEmpty = True
             if not checkFileEmpty:
                 lastTeamName = dataArray[-1].get("team").get("teamName")
-                print("last team is " + lastTeamName)
                 for player in dataArray:
                     playersInFileList.append(player.get("playerName"))
                 newStartingIndex = teamNames.index(lastTeamName)
@@ -82,8 +79,6 @@ try:
             playerName = player.find_all(
                 "a", attrs={"class": "Anchor_complexLink__2NtkO"}
             )[0].text
-
-            print(playerName)
 
             if playerName in playersInFileList:
                 continue
@@ -125,18 +120,10 @@ try:
             }
 
             dataArray.append(data)
-            print(data)
 
         with open(dataFileName, "r+") as write_file:
-            try:
-                json.dump(dataArray, write_file, indent=4)
-            except:
-                json.dump(dataArray, write_file, indent=4)
-                print("bitti")
+            json.dump(dataArray, write_file, indent=4)
 
 except:
     with open(dataFileName, "r+") as write_file:
-        try:
-            json.dump(dataArray, write_file, indent=4)
-        except:
-            json.dump(dataArray, write_file, indent=4)
+        json.dump(dataArray, write_file, indent=4)
