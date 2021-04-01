@@ -6,7 +6,8 @@
 ## v2 
  - Fixed, usable JSON file.
  - Example data
- '''[
+ ```
+ [
     {
         "playerName": "Jayson Tatum",
         "playerNumber": "0",
@@ -24,7 +25,8 @@
             "teamWebsiteLink": "celtics.com"
         }
     }
- ]'''
+ ]
+ ```
 
 ## v1
  - NBA player's and their team's info are shown in json file but there are some unwanted results.
