@@ -1,4 +1,4 @@
-# API NBA Players
+# NBA Players
  
  
  Creates json file consists current NBA players, their info and stats.
