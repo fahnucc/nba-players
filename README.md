@@ -1,7 +1,7 @@
 # NBA Players
  
  
- Creates json file consists current NBA players, their info and stats.
+ Creates json file consists current NBA players, their info and stats with using BeautifulSoup and requests. 
  
 ## v2 
  - Fixed, usable JSON file.
