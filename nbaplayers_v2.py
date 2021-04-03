@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
 import os
+import time
 import json
 
 dataFileName = "data_file_v2.json"
